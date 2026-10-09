@@ -1,0 +1,22 @@
+{
+  "name": "polish-public-tenders",
+  "version": "1.0.0",
+  "description": "Polish public procurement: BZP and TED tenders, awards, buyers and contractors.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "polish-public-tenders": {
+      "httpUrl": "https://compabase.com/api/mcp/tenders",
+      "headers": {
+        "Authorization": "Bearer ${COMPABASE_MCP}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "Compabase MCP key",
+      "description": "Your MCP key (mcpk_...) from https://compabase.com/integrations?tab=mcp",
+      "envVar": "COMPABASE_MCP",
+      "sensitive": true
+    }
+  ]
+}
